@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SEf-Ss-spn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -86,12 +85,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHu-RT-p8K">
-                                            <rect key="frame" x="20" y="18" width="50" height="50"/>
+                                            <rect key="frame" x="20" y="19" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="OTA-O4-kgl"/>
                                                 <constraint firstAttribute="width" constant="50" id="yo2-g6-Ema"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem, ipsum, I forgot how it goes..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntH-Sc-ibs">
+                                            <rect key="frame" x="78" y="47" width="271.66666666666674" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="271.67000000000002" id="74T-tk-KZu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiI-d6-NeO">
                                             <rect key="frame" x="78" y="19" width="76.666666666666686" height="20.666666666666671"/>
                                             <constraints>
@@ -101,27 +109,16 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem, ipsum, I forgot how it goes..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntH-Sc-ibs">
-                                            <rect key="frame" x="78" y="47" width="271.66666666666669" height="20"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="271.67000000000002" id="74T-tk-KZu"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="XiI-d6-NeO" firstAttribute="top" secondItem="Usv-Je-rsd" secondAttribute="topMargin" constant="8" id="80e-UX-4su"/>
                                         <constraint firstItem="ntH-Sc-ibs" firstAttribute="leading" secondItem="fHu-RT-p8K" secondAttribute="trailing" constant="8" id="8Xg-CS-Aj4"/>
-                                        <constraint firstItem="fHu-RT-p8K" firstAttribute="leading" secondItem="Usv-Je-rsd" secondAttribute="leadingMargin" id="Hfs-Xt-4iV"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ntH-Sc-ibs" secondAttribute="bottom" constant="9" id="K3T-qV-lKU"/>
-                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="fHu-RT-p8K" secondAttribute="bottom" constant="8" id="awI-6r-oKU"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="fHu-RT-p8K" secondAttribute="bottom" constant="7" id="awI-6r-oKU"/>
                                         <constraint firstItem="XiI-d6-NeO" firstAttribute="leading" secondItem="fHu-RT-p8K" secondAttribute="trailing" constant="8" id="hNF-xD-1Ia"/>
                                         <constraint firstItem="ntH-Sc-ibs" firstAttribute="top" secondItem="XiI-d6-NeO" secondAttribute="bottom" constant="7.3300000000000001" id="jjb-II-iDo"/>
-                                        <constraint firstItem="fHu-RT-p8K" firstAttribute="centerY" secondItem="Usv-Je-rsd" secondAttribute="centerY" id="po3-IC-9KQ"/>
-                                        <constraint firstItem="fHu-RT-p8K" firstAttribute="centerX" secondItem="Usv-Je-rsd" secondAttribute="centerX" id="tIa-Vg-DHo"/>
-                                        <constraint firstItem="fHu-RT-p8K" firstAttribute="top" secondItem="Usv-Je-rsd" secondAttribute="topMargin" constant="7" id="wAh-KM-Izz"/>
+                                        <constraint firstItem="fHu-RT-p8K" firstAttribute="centerX" secondItem="Usv-Je-rsd" secondAttribute="centerX" constant="-151.5" id="tIa-Vg-DHo"/>
+                                        <constraint firstItem="fHu-RT-p8K" firstAttribute="top" secondItem="Usv-Je-rsd" secondAttribute="topMargin" constant="8" id="wAh-KM-Izz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
