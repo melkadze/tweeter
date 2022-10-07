@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-Please allow it up to a minute to load. It will appear blank until then.
+Please allow it up to a couple minutes to load. It will appear blank until then.
 
 <img src='./demo2.gif' title='Video Walkthrough' width='350' alt='Video Walkthrough' />
 
